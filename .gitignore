@@ -1,0 +1,40 @@
+# maven noise
+target/
+
+# gradle noise
+.gradle
+
+# osx noise
+.DS_Store
+profile
+
+# IntelliJ Idea noise
+.idea
+*.iws
+*.ipr
+*.iml
+*.releaseBackup
+atlassian-ide-plugin.xml
+
+# NB noise
+nbactions.xml
+nb-configuration.xml
+
+# Eclipse noise
+.settings
+.settings/*
+.project
+.classpath
+
+# Maven plugins noise
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+
+#from Angular-seed
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+.idea
