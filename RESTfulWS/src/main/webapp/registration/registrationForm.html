@@ -1,0 +1,46 @@
+<div class="page-header"><h2>REGISTRATION FORM</h2></div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">Register an account with us!</div>
+    </div>
+    <div class="panel-body" >All the fields are required.<p>
+    • The username field accepts alpha-numeric values only <br/>
+    • The username length is no less than 5 characters<br/>
+    • The username is not already registered<br/>
+    • The password has a minimum length of 8 characters and contains at least 1 number, 1 uppercase, and 1 lowercase character  <br/>
+
+    </div>
+  </div>
+
+<div ng-controller="registrationFormCtrl">
+    <div class="row">
+        <div class="col-6">
+            <form id="form" name="form" novalidate >
+                <div class="frow" ng-show='duplicateUser'>
+                  <div class="fset s6,col-8">
+                     <span class="col-6, danger" >Error: This username already registered.</span>&nbsp;
+                  </div>
+              </div>
+
+                <div class="frow">
+                  <div class="fset">
+                      <label >User name:</label>
+                      <input type='text' name='userName' class='s6 req' ng-model='userName' minlength="5" required ng-blur="validateUser()"/>
+                  </div>
+               </div><!--
+               <div class="frow">
+                  <div class="fset">
+                      <label >Email address:</label>
+                      <input type='text' name='email' class='s6 req' ng-model='email' required />
+                  </div>
+               </div> -->
+                <div class="frow">
+                  <div class="fset">
+                      <label >Password:</label>
+                      <input type='password' class='s6 req' ng-model='password' required ng-blur="validatePswd()"/>
+                  </div>
+               </div>
+            </form>
+        </div>
+    </div>
+</div>
