@@ -25,7 +25,7 @@
                 <div class="frow">
                   <div class="fset">
                       <label >User name:</label>
-                      <input type='text' name='userName' class='s6 req' ng-model='userName' minlength="5" required ng-blur="validateUser()"/>
+                      <input type='text' name='userName' class='s6 reqired' ng-model='model.userName' minlength="5" required ng-blur="validateUser()"/>
                   </div>
                </div><!--
                <div class="frow">
@@ -37,7 +37,7 @@
                 <div class="frow">
                   <div class="fset">
                       <label >Password:</label>
-                      <input type='password' class='s6 req' ng-model='password' required ng-blur="validatePswd()"/>
+                      <input type='password' class='s6 req' ng-model='model.password' required ng-blur="validatePswd()"/>
                   </div>
                </div>
             </form>
